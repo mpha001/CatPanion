@@ -45,24 +45,78 @@ With tabs and tools open
 
 ### Endpoints
 
-`/`
-`/:id`
+**GET /:id**
+Response Body Example
+
+```
+{
+    "id": "6be619d5-de2c-4f62-ac1b-bd2e36d71ab9",
+    "todolist": [
+      "Check emails",
+      "Edit new video"
+    ]
+    "notes": "Video content ideas..."
+}
+```
+
+**POST /:id/todolist**
+POST Body Example
+
+```
+  {
+    "todolist": [
+      "Write article",
+      "Meeting with manager at 4:30"
+    ]
+  }
+```
+
+Response Body Example
+
+```
+  {
+    "id": "f3aa5dd5-4c75-4a74-a410-c59d56d04697",
+    "todolist": [
+      "Check emails",
+      "Edit new video"
+    ]
+  }
+```
+
+**POST /:id/notes**
+POST Body Example
+
+```
+  {
+    "notes": "Video content ideas..."
+  }
+```
+
+Response Body Example
+
+```
+  {
+    "id": "f3aa5dd5-4c75-4a74-a410-c59d56d04697",
+    "notes": "Video content ideas..."
+  }
+```
 
 ## Roadmap
 
 1. Build repository for client and server and initialize for both
 2. Create React App
-3. Create To do List
-4. Create Notes Component
-5. Create Pomodoro Component
-6. Create 3D component, import three js fiber library
-7. Import 3D objects, animations and rigging (asset pack)
-8. Create idle state, walking, sitting, and playing
-9. Create music player component with React H5 audio player, customize design
-10. Build furniture, add to setting of 3D
-11. Build database in MySQL
-12. Connect database to front-end
-13. Deploy front-end to netlify, back-end to heroku
+3. Create Tools Component
+4. Create To do List
+5. Create Notes Component
+6. Create Pomodoro Component
+7. Create 3D component, import three js fiber library
+8. Import 3D objects, animations and rigging (asset pack)
+9. Create idle state, walking, sitting, and playing
+10. Create music player component with React H5 audio player, customize design
+11. Build furniture, add to setting of 3D
+12. Build database in MySQL
+13. Connect database to front-end
+14. Deploy front-end to netlify, back-end to heroku
 
 ## Future Implementations
 
