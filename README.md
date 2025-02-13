@@ -22,11 +22,11 @@ Users who want a stress-free, relaxing productivity app where they can enjoy the
 
 ### Tech Stack
 
-Libraries: React, React three fiber
-Components: React h5 Audio player, React-calendar
-Frameworks: Express
-Languages: HTML, CSS, Javascript
-Database: MySQL
+- Libraries: React, React three fiber
+- Components: React h5 Audio player, React-calendar
+- Frameworks: Express
+- Languages: HTML, CSS, Javascript
+- Database: MySQL
 
 ### Sitemap
 
