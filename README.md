@@ -56,7 +56,7 @@ With tabs and tools open
 4. Create Notes Component
 5. Create Pomodoro Component
 6. Create 3D component, import three js fiber library
-7. Import 3D objects, animations and rigging (from market)
+7. Import 3D objects, animations and rigging (asset pack)
 8. Create idle state, walking, sitting, and playing
 9. Create music player component with React H5 audio player, customize design
 10. Build furniture, add to setting of 3D
