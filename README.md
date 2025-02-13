@@ -76,9 +76,9 @@ Response Body Example
 ```
   {
     "id": "f3aa5dd5-4c75-4a74-a410-c59d56d04697",
-    "todolist": [
-      "Check emails",
-      "Edit new video"
+        "todolist": [
+        "Write article",
+        "Meeting with manager at 4:30"
     ]
   }
 ```
