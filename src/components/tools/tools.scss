@@ -1,0 +1,40 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/global" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/typography" as *;
+
+.tools {
+  &__list {
+    //ul
+    display: flex;
+    flex-direction: row;
+    margin: 1.25rem;
+    width: 3.125rem;
+    position: absolute;
+    gap: 1.25rem;
+  }
+  &__image {
+    width: 3.125rem;
+    filter: invert(57%) sepia(92%) saturate(352%) hue-rotate(203deg)
+      brightness(105%) contrast(92%);
+
+    &:hover {
+      filter: invert(1) brightness(0%);
+    }
+
+    &--hidden {
+      visibility: hidden;
+    }
+    &--active {
+      visibility: visible;
+    }
+  }
+  &__item {
+    transition: transform 0.3s ease-in-out;
+    &--mod {
+      &:hover {
+        transform: translateY(-0.25rem);
+      }
+    }
+  }
+}

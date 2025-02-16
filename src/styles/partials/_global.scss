@@ -1,0 +1,18 @@
+@use "./variables" as *;
+@use "./typography" as *;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  //   font-family: "Outfit", sans-serif;
+  font-size: 100%;
+  //   color: $primary-text-color;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
