@@ -44,13 +44,13 @@ Users who want a stress-free, relaxing productivity app where they can enjoy the
 ### Mockups
 
 Upon opening the site, the tabs are closed
-![](assets/images/mockup_1.jpg)
+![](src/assets/images/mockup_1.jpg)
 With tabs and tools open
-![](assets/images/mockup_2.jpg)
+![](src/assets/images/mockup_2.jpg)
 
 ### Data
 
-![](/assets/images/mockup_datatable.png)
+![](src/assets/images/mockup_datatable.png)
 
 ### Endpoints
 
