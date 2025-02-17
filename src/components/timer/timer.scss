@@ -1,0 +1,43 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/global" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/typography" as *;
+
+.timer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+  border: 2px solid;
+  margin: 0 auto;
+  padding: 20px;
+
+  border-radius: 20px;
+  box-shadow: 0px 10px 20px -8px lightpink;
+
+  &__text {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 36px;
+  }
+}
+
+.timer-box {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  &__button {
+    width: 50px;
+    height: 65px;
+    filter: invert(57%) sepia(92%) saturate(352%) hue-rotate(203deg)
+      brightness(105%) contrast(92%);
+
+    &:hover {
+      filter: invert(1) brightness(0%);
+    }
+
+    &--size {
+      width: 32px;
+    }
+  }
+}

@@ -4,13 +4,12 @@
 @use "../../styles/partials/typography" as *;
 
 .tools {
+  width: 25%;
   &__list {
-    //ul
     display: flex;
     flex-direction: row;
-    margin: 1.25rem;
+    margin: 1.25rem 1.25rem 0rem 1.25rem;
     width: 3.125rem;
-    position: absolute;
     gap: 1.25rem;
   }
   &__image {
