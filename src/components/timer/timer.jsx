@@ -19,9 +19,8 @@ function Timer() {
 
     if (time <= 0) {
       clearInterval(interval);
-      setTime(5 * 60);
       const alarm = new Audio({ AlarmAudio });
-      alarm.volume = 0.5;
+      alarm.volume = 0.4;
       alarm.play();
     }
 

@@ -4,7 +4,7 @@
 @use "../../styles/partials/typography" as *;
 
 .tools {
-  width: 25%;
+  position: absolute;
   &__list {
     display: flex;
     flex-direction: row;
@@ -14,8 +14,7 @@
   }
   &__image {
     width: 3.125rem;
-    filter: invert(57%) sepia(92%) saturate(352%) hue-rotate(203deg)
-      brightness(105%) contrast(92%);
+    @include filter-color;
 
     &:hover {
       filter: invert(1) brightness(0%);

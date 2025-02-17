@@ -1,0 +1,29 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/global" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/typography" as *;
+
+.audio-container {
+  display: flex;
+  margin: 100px auto;
+
+  width: 20%;
+}
+.rhap_container {
+  background-color: $white !important;
+  border-radius: 20px;
+
+  box-shadow: 0px 10px 20px -8px $shadow-color !important;
+}
+
+.iconify {
+  filter: invert(57%) sepia(92%) saturate(352%) hue-rotate(203deg)
+    brightness(105%) contrast(92%) !important;
+}
+
+.rhap_progress-indicator {
+  @include filter-color;
+}
+.rhap_volume-indicator {
+  @include filter-color;
+}
