@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Tools from "./components/tools/tools";
 
 import "./App.scss";

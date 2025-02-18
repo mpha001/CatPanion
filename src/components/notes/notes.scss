@@ -1,0 +1,36 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/global" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/typography" as *;
+
+.notes {
+  display: flex;
+  width: 20%;
+  border-radius: 20px;
+  background-color: $notes-color;
+  box-shadow: 0px 10px 20px -8px $shadow-color;
+  margin: 0 auto;
+  &__heading {
+    display: flex;
+  }
+  &__text {
+    outline: none;
+    background: none;
+    height: 300px;
+    margin: 20px;
+    width: 100%;
+  }
+}
+
+textarea {
+  border: none;
+  outline: none;
+}
+
+textarea::-webkit-scrollbar {
+  width: 10px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background-color: $white;
+}
