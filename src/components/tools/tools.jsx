@@ -8,12 +8,14 @@ import MusicIcon from "../../assets/icons/music-note.svg";
 import Timer from "../timer/timer";
 import MusicPlayer from "../musicPlayer/musicPlayer";
 import Notes from "../notes/notes";
+import ToDoList from "../toDoList/toDoList";
 
 function Tools() {
   const [toggle, setToggle] = useState(false);
   const [toggleTimer, setToggleTimer] = useState(false);
   const [togglePlayer, setTogglePlayer] = useState(false);
   const [toggleNotes, setToggleNotes] = useState(false);
+  const [toggleToDoList, setToggleToDoList] = useState(false);
 
   const handleClick = () => {
     setToggle((prev) => !prev);
@@ -28,9 +30,14 @@ function Tools() {
     setTogglePlayer((prev) => !prev);
     console.log("Music Player click");
   };
+
   const handleNotesClick = () => {
     setToggleNotes((prev) => !prev);
     console.log("Notes click");
+  };
+  const handleToDoClick = () => {
+    setToggleToDoList((prev) => !prev);
+    console.log("todo click");
   };
 
   return (
@@ -61,6 +68,7 @@ function Tools() {
                 className="tools__image tools__image--active "
                 src={ListIcon}
                 alt="list icon"
+                onClick={handleToDoClick}
               />
             </li>
             <li className="tools__item tools__item--mod">
@@ -93,8 +101,9 @@ function Tools() {
           </ul>
         )}
       </div>
-      <div className="tools-components">
-        {toggleTimer && <Timer />}
+      {toggleTimer && <Timer />}
+      {toggleToDoList && <ToDoList />}
+      <div className="tools-right">
         {togglePlayer && <MusicPlayer />}
         {toggleNotes && <Notes />}
       </div>

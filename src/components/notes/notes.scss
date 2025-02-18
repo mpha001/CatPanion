@@ -5,11 +5,11 @@
 
 .notes {
   display: flex;
-  width: 20%;
+
   border-radius: 20px;
   background-color: $notes-color;
   box-shadow: 0px 10px 20px -8px $shadow-color;
-  margin: 0 auto;
+
   &__heading {
     display: flex;
   }

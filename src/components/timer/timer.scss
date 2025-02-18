@@ -8,11 +8,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 15%;
-  margin: 0 auto;
+  height: 100px;
+  width: 11%;
+
   padding: 20px;
   border-radius: 20px;
   box-shadow: 0px 10px 20px -8px $shadow-color;
+  margin: -50px auto;
 
   &__text {
     font-family: Verdana, Geneva, Tahoma, sans-serif;

@@ -19,7 +19,7 @@ function Timer() {
 
     if (time <= 0) {
       clearInterval(interval);
-      const alarm = new Audio({ AlarmAudio });
+      const alarm = new Audio(AlarmAudio);
       alarm.volume = 0.4;
       alarm.play();
     }
