@@ -1,4 +1,11 @@
 @mixin filter-color {
-  filter: invert(57%) sepia(92%) saturate(352%) hue-rotate(203deg)
-    brightness(105%) contrast(92%);
+  filter: invert(57%) sepia(92%) saturate(352%) hue-rotate(203deg) brightness(105%) contrast(92%);
+}
+
+@mixin font-family-todo {
+  font-family: "Pacifico", serif;
+}
+
+@mixin font-family-timer {
+  font-family: "Urbanist", serif;
 }

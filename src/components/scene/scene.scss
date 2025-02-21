@@ -1,0 +1,12 @@
+@use "../../styles/partials/variables" as *;
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(rgb(48, 42, 85), rgb(114, 121, 187));
+  z-index: 1;
+}

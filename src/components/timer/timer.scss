@@ -8,16 +8,16 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100px;
+  height: 120px;
   width: 11%;
 
-  padding: 20px;
   border-radius: 20px;
   box-shadow: 0px 10px 20px -8px $shadow-color;
   margin: -50px auto;
+  background: $white;
 
   &__text {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    @include font-family-timer;
     font-size: 36px;
   }
 }

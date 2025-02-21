@@ -18,96 +18,66 @@ function Tools() {
   const [toggleToDoList, setToggleToDoList] = useState(false);
 
   const handleClick = () => {
-    setToggle((prev) => !prev);
+    setToggle(prev => !prev);
   };
 
   const handleTimerClick = () => {
-    setToggleTimer((prev) => !prev);
+    setToggleTimer(prev => !prev);
     console.log("Timer click");
   };
 
   const handlePlayerClick = () => {
-    setTogglePlayer((prev) => !prev);
+    setTogglePlayer(prev => !prev);
     console.log("Music Player click");
   };
 
   const handleNotesClick = () => {
-    setToggleNotes((prev) => !prev);
+    setToggleNotes(prev => !prev);
     console.log("Notes click");
   };
   const handleToDoClick = () => {
-    setToggleToDoList((prev) => !prev);
+    setToggleToDoList(prev => !prev);
     console.log("todo click");
   };
 
   return (
-    <>
-      <div className="tools-container">
+    <div className='tools-wrapper'>
+      <div className='tools-container'>
         {toggle ? (
-          <ul className="tools__list">
-            <li className="tools__item">
-              <img
-                className="tools__image"
-                src={ToolsIcon}
-                alt="tools icon"
-                onClick={handleClick}
-              />
+          <ul className='tools__list'>
+            <li className='tools__item'>
+              <img className='tools__image' src={ToolsIcon} alt='tools icon' onClick={handleClick} />
             </li>
 
-            <li className="tools__item tools__item--mod">
-              <img
-                className="tools__image tools__image--active "
-                src={ClockIcon}
-                alt="clock icon"
-                onClick={handleTimerClick}
-              />
+            <li className='tools__item tools__item--mod'>
+              <img className='tools__image tools__image--active ' src={ClockIcon} alt='clock icon' onClick={handleTimerClick} />
             </li>
 
-            <li className="tools__item tools__item--mod">
-              <img
-                className="tools__image tools__image--active "
-                src={ListIcon}
-                alt="list icon"
-                onClick={handleToDoClick}
-              />
+            <li className='tools__item tools__item--mod'>
+              <img className='tools__image tools__image--active' src={ListIcon} alt='list icon' onClick={handleToDoClick} />
             </li>
-            <li className="tools__item tools__item--mod">
-              <img
-                className="tools__image tools__image--active "
-                src={NotesIcon}
-                alt="notes icon"
-                onClick={handleNotesClick}
-              />
+            <li className='tools__item tools__item--mod'>
+              <img className='tools__image tools__image--active' src={NotesIcon} alt='notes icon' onClick={handleNotesClick} />
             </li>
-            <li className="tools__item tools__item--mod">
-              <img
-                className="tools__image tools__image--active "
-                src={MusicIcon}
-                alt="music player icon"
-                onClick={handlePlayerClick}
-              />
+            <li className='tools__item tools__item--mod'>
+              <img className='tools__image tools__image--active' src={MusicIcon} alt='music player icon' onClick={handlePlayerClick} />
             </li>
           </ul>
         ) : (
-          <ul className="tools__list ">
-            <li className="tools__item">
-              <img
-                className="tools__image"
-                src={ToolsIcon}
-                alt="tools icon"
-                onClick={handleClick}
-              />
+          <ul className='tools__list '>
+            <li className='tools__item'>
+              <img className='tools__image' src={ToolsIcon} alt='tools icon' onClick={handleClick} />
             </li>
           </ul>
         )}
       </div>
       {toggleTimer && <Timer />}
       {toggleToDoList && <ToDoList />}
-      <div className="tools-right">
+      <div className='tools-right'>
         {togglePlayer && <MusicPlayer />}
         {toggleNotes && <Notes />}
       </div>
-    </>
+    </div>
   );
 }
 

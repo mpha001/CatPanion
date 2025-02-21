@@ -12,9 +12,12 @@
   height: 400px;
   width: 20%;
   position: absolute;
+  background: $white;
+  margin-top: 20px;
   &__heading {
     display: flex;
     margin: 20px;
+    @include font-family-todo;
   }
   &__input {
     border: none;
