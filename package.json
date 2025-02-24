@@ -1,26 +1,23 @@
 {
-  "name": "react-three-vite",
+  "name": "catpanion",
   "version": "1.0.2",
-  "description": "A simple React Three Fiber + Vite starter with an import-ready CodeSandbox config.",
+  "description": "Productivity app with a cat in a 3D virtual scene",
   "keywords": [
     "r3f",
     "react",
     "three",
     "vite",
-    "starter",
-    "react three fiber",
-    "sandbox",
-    "codesandbox"
+    "react three fiber"
   ],
-  "author": "Benjamin Miles <talk@benjaminmiles.com> (https://github.com/benjaminmiles)",
-  "repository": "github:benjaminmiles/react-three-vite",
+  "type": "module",
+  "author": "",
   "license": "MIT",
   "dependencies": {
     "@react-three/drei": "9.115.0",
     "@react-three/fiber": "8.17.10",
     "axios": "^1.7.9",
+    "debounce": "^2.2.0",
     "react": "18.3.1",
-    "react-autosave": "^0.4.4",
     "react-dom": "18.3.1",
     "react-h5-audio-player": "^3.10.0-rc.1",
     "react-router-dom": "^7.2.0",
@@ -34,14 +31,7 @@
   },
   "scripts": {
     "dev": "vite --host",
-    "sandbox": "APP_ENV=sandbox vite",
     "build": "vite build",
     "preview": "vite preview"
-  },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+  }
 }

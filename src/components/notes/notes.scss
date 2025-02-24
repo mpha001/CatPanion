@@ -1,14 +1,11 @@
 @use "../../styles/partials/variables" as *;
 @use "../../styles/partials/global" as *;
-@use "../../styles/partials/mixins" as *;
-@use "../../styles/partials/typography" as *;
 
 .notes {
   display: flex;
-
-  border-radius: 20px;
+  border-radius: 1.25rem;
   background-color: $notes-color;
-  box-shadow: 0px 10px 20px -8px $shadow-color;
+  box-shadow: 0rem 0.625rem 1.25rem -0.5rem $shadow-color;
 
   &__heading {
     display: flex;
@@ -16,9 +13,14 @@
   &__text {
     outline: none;
     background: none;
-    height: 300px;
-    margin: 20px;
+    height: 18.75rem;
+    margin: 1.25rem;
     width: 100%;
+  }
+  &__text-save {
+    font-size: 2.5rem;
+    color: $white;
+    position: absolute;
   }
 }
 
@@ -28,7 +30,7 @@ textarea {
 }
 
 textarea::-webkit-scrollbar {
-  width: 10px;
+  width: 0.625rem;
 }
 
 textarea::-webkit-scrollbar-thumb {
