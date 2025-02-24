@@ -23,6 +23,7 @@ Users who want a stress-free, relaxing productivity app where they can enjoy the
 ```
 npm i
 npm run dev
+Create .env file with the sample included
 ```
 
 ## Implementation
