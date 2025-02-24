@@ -119,7 +119,6 @@ Response Body Example
 11. Build furniture, add to setting of 3D
 12. Build database in MySQL
 13. Connect database to front-end
-14. Deploy front-end to netlify, back-end to heroku
 
 ## Future Implementations
 
