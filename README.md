@@ -21,6 +21,7 @@ Users who want a stress-free, relaxing productivity app where they can enjoy the
 ### Installation
 
 ```
+npm i
 npm run dev
 ```
 
