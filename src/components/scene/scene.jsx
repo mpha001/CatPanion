@@ -85,7 +85,7 @@ function Scene() {
     <>
       <Canvas>
         <ambientLight intensity={8} />
-        <pointLight position={[1, 10, 1]} intensity={1} />
+        <pointLight position={[1, 10, 1]} intensity={1} color={"#ffffff"} />
         <PerspectiveCamera
           makeDefault
           position={[10, 7, 10]}

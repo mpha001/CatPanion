@@ -17,7 +17,7 @@
     @include filter-color;
 
     &:hover {
-      filter: invert(1) brightness(0%);
+      @include hover-color;
     }
 
     &--hidden {

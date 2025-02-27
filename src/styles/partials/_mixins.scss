@@ -1,5 +1,11 @@
 @mixin filter-color {
-  filter: invert(57%) sepia(92%) saturate(352%) hue-rotate(203deg) brightness(105%) contrast(92%);
+  // filter: invert(57%) sepia(92%) saturate(352%) hue-rotate(203deg) brightness(105%) contrast(92%);
+  filter: brightness(0) saturate(100%) invert(72%) sepia(48%) saturate(631%)
+    hue-rotate(197deg) brightness(111%) contrast(102%);
+}
+@mixin hover-color {
+  filter: brightness(0) saturate(100%) invert(59%) sepia(12%) saturate(1713%)
+    hue-rotate(302deg) brightness(107%) contrast(99%);
 }
 
 @mixin font-family-todo {
