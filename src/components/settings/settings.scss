@@ -1,0 +1,15 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/global" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/typography" as *;
+.settings__image {
+  @include filter-color;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 3.125rem;
+  margin: 1.25rem 1.25rem 0rem 1.25rem;
+  &:hover {
+    @include hover-color;
+  }
+}
