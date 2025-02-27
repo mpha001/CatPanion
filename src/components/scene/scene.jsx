@@ -8,6 +8,8 @@ import {
 } from "@react-three/drei";
 import { FBXLoader } from "three/examples/jsm/loaders/FBXLoader";
 import "./scene.scss";
+import Meow1 from "../../assets/audio/cat-meow.mp3";
+import Meow2 from "../../assets/audio/cat-meow2.mp3";
 
 function Scene() {
   function Bedroom() {
@@ -18,7 +20,8 @@ function Scene() {
   function Cat(props) {
     const { scene, animations } = useGLTF("/cat3.gltf");
     const { ref, actions, names } = useAnimations(animations);
-    const [index, setIndex] = useState(0);
+    const [index, setIndex] = useState(6);
+    const catMeow = [Meow1, Meow2];
     const exceptIndexes = [0, 3, 6, 7];
 
     useEffect(() => {
@@ -27,6 +30,14 @@ function Scene() {
         setIndex(randomIndex);
       }
     }, [names]);
+
+    const handleCatClick = () => {
+      setIndex(6);
+      const random = catMeow[Math.floor(Math.random() * catMeow.length)];
+      const catSound = new Audio(random);
+      catSound.volume = 0.2;
+      catSound.play();
+    };
 
     useEffect(() => {
       const validIndexes = names
@@ -59,7 +70,13 @@ function Scene() {
 
     return (
       <group ref={ref} {...props} dispose={null}>
-        <primitive object={scene} scale={0.3} position={[4.7, 0.5, 4]} />
+        <primitive
+          object={scene}
+          scale={0.3}
+          position={[4.7, 0.5, 4]}
+          onClick={handleCatClick}
+          rotation={[0, 1, 0]}
+        />
       </group>
     );
   }
