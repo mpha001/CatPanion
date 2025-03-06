@@ -10,6 +10,7 @@ import MusicPlayer from "../musicPlayer/musicPlayer";
 import Notes from "../notes/notes";
 import ToDoList from "../toDoList/toDoList";
 
+
 function Tools() {
   const [toggle, setToggle] = useState(false);
   const [toggleTimer, setToggleTimer] = useState(false);

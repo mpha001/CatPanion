@@ -25,8 +25,6 @@ function Timer() {
     console.log(time);
 
     if (time == 0) {
-      console.log(time);
-      console.log(clearInterval(interval));
       const alarm = new Audio(AlarmAudio);
       alarm.volume = 0.4;
       setIsRunning(false);
