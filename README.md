@@ -19,7 +19,10 @@ Productivity apps are mundane these days and lack creative direction. On the oth
 ```
 npm i
 npm run dev
+<<<<<<< HEAD
 
+=======
+>>>>>>> 71550fd2ad77d87dba7949618ece9a1d7c79b3a3
 ```
 
 ## Implementation
