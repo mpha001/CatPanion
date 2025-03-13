@@ -1,4 +1,4 @@
-import "./ToDoList.scss";
+import "./toDoList.scss";
 import CheckBox from "../../assets/icons/checkbox.svg";
 import CheckBoxFilled from "../../assets/icons/checkbox-filled.svg";
 import axios from "axios";
