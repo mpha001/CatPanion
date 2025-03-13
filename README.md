@@ -1,6 +1,8 @@
-# Catpanion 🐱
+# Catpanion
 
 ![Screenshot of project sample](src/assets/images/screenshot_sample.png)
+
+[🐱 Link to Catpanion 🐱](https://catpanion.netlify.app/ "Catpanion's Homepage")
 
 ## Overview
 
