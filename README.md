@@ -6,7 +6,7 @@
 
 ## Overview
 
-This is a 3D pet productivity app with common tools provided to enhance the user's work session experience.
+This is a 3D pet productivity desktop app with common tools provided to enhance the user's work session experience.
 
 ### Problem Space
 
