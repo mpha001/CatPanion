@@ -39,6 +39,7 @@ React, React Three Fiber, Express, NodeJS, HTML, SCSS, Javascript, MySQL
 ## Roadmap
 
 - Rebuild database to POSTGres
+- Replace prototype 3D assets with self-developed assets
 - Change cat's appearance
 - Make notes screen larger
 - Custom animations and models built from scratch
